@@ -1,7 +1,11 @@
-import javax.swing.*;
+public void main() {
 
-public class Main {
-        public static void main(String[] args) {
-            JOptionPane.showInternalMessageDialog(null, "Всем большой привет!");
-        }
-    }
+    final int one = 123;
+    final int two = 456;
+    int i = one | two;
+    System.out.println(i);
+
+}
+
+
+
