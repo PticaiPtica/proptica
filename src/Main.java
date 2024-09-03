@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] ignoredArgs) {
         int Num = 30;
         int Numsts = 20;
         short aSr = 30000;
