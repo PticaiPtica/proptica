@@ -30,5 +30,6 @@ public class Main {
         System.out.println("Умножение "+multiplicationD);
         System.out.println("Деление "+divisionD);
         System.out.println("Остаток "+remainder);
+
     }
 }
