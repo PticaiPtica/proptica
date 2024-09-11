@@ -4,7 +4,7 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class HomeW {
-    public static void main(String[] Args) {
+    public static void main(String[] ignoredArgs) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Подходим к магазину");
         String yes = "да";
@@ -43,7 +43,7 @@ public class HomeW {
             System.out.println("Получаем удовольствие");
             System.exit(0);
         } else if (Objects.equals(Shina3, no))
-            System.out.println("Огорчаемся");
+            System.out.println("Огорчаемся(");
         System.exit(0);
     }
 
