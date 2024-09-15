@@ -93,7 +93,7 @@ public class Hwork11_12 {
                 case (3), (4), (5) -> System.out.println("весна");
                 case (6), (7), (8) -> System.out.println("лето");
                 case (9), (10), (11) -> System.out.println("осень");
-
+ 
             }
 
 
