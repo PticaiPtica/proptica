@@ -92,8 +92,6 @@ public class Hwork11_12{
                 case (9), (10), (11) -> System.out.println("осень");
 
             }
-
-
         }
     }
 }
