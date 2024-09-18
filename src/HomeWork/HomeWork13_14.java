@@ -3,7 +3,7 @@ package HomeWork;
 import java.util.Scanner;
 
 public class HomeWork13_14 {
-    public static void main(String[] Args) {
+    public static void main(String[] ignoredArgs) {
         task1();
         task2();
         task3();
@@ -45,7 +45,7 @@ public class HomeWork13_14 {
         Условие: Напишите программу, которая выводит таблицу умножения от 1 до 10 (1 * 1, 1* 2 и т.д. до 10 * 10)
         Использовать вложенные циклы for.
 */
-        int j2 = 1;
+        int j2 = 0;
         for (int i = 1, j = 1; j <= 10; i++) {
             if (i == 11) {
                 j = j + 1;
