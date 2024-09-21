@@ -78,7 +78,6 @@ public class homeWork15_16 {
 
         System.out.println(java.toUpperCase());
 
-
     }
 
     static void task3() {
@@ -89,17 +88,15 @@ public class homeWork15_16 {
         // Проверьте алгоритм на нескольких строках разной длины
         String Str = "stri43ng";
         System.out.println(Str);
-        int lengthStr=Str.length();
+        int lengthStr = Str.length();
         System.out.println(lengthStr);
-        int iNdexL= lengthStr/2;
+        int iNdexL = lengthStr / 2;
         System.out.println(iNdexL);
-        int index1= iNdexL-1;
+        int index1 = iNdexL - 1;
         System.out.println(index1);
-        int index2= iNdexL+1;
+        int index2 = iNdexL + 1;
         System.out.println(index2);
-        System.out.println(Str.substring(index1,index2));
-
-
+        System.out.println(Str.substring(index1, index2));
 
 
     }
