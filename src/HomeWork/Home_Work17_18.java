@@ -20,8 +20,6 @@ public class Home_Work17_18 {
         } else {
             System.out.println("Палиндром");
         }
-
-
         String str22 = "qwerrewq";
         boolean isPalindrom = true;
         for (int i = 0; i < (str22.length() / 2); i++) {
