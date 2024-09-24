@@ -10,7 +10,7 @@ public class Home_Work17_18 {
         символ с последним, второй с предпоследним и т.д.
                 c. * подумать –как можно проверить на палиндром число, например 1234321
 */
-        String Str = "1234321";
+        String Str = "12344321";
         StringBuilder text1 = new StringBuilder(Str);
         System.out.println(text1);
         StringBuilder text2 = text1.reverse();
