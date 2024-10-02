@@ -40,8 +40,8 @@ public class Home_Work19_20 {
                 continue;
             }
         }
-        System.out.println(STR."Макс \{max}");
-        System.out.println(STR."Мин \{min}");
+        System.out.println("Макс ");
+        System.out.println("Мин ");
     }
 
     static void task3() {
