@@ -17,7 +17,6 @@ public class Methods {
 
     public static String[] cornerValuesArray(String[] ValuesArray) {
         int max = ValuesArray[0].length();
-        int min = ValuesArray[0].length();
         String[] MinMAx = new String[2];
         for (String s : ValuesArray) {
             if (s.length() < max) {

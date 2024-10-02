@@ -31,6 +31,7 @@ public class Main {
     static void tast3() {
         String[] strings = {"Johnss", "Ma", "Janes", "Daddy"};
         System.out.println(Arrays.toString(cornerValuesArray(strings)));
+
         String[] stringsNew = {"Ramy", "jord", "Kay", "Li"};
         System.out.println(Arrays.toString(cornerValuesArray(stringsNew)));
     }
