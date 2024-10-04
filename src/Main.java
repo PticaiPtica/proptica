@@ -7,16 +7,13 @@ public class Main {
         tast1();
         tast2();
         tast3();
-
     }
-
     static void tast1() {
         int first = 22;
         System.out.println(square(first));
         int two = 33;
         System.out.println(square(two));
     }
-
     static void tast2() {
         String name1 = "jon";
         String name2 = "Marry";
@@ -25,9 +22,7 @@ public class Main {
 
         System.out.println(printFullName(name1, family1));
         System.out.println(printFullName(name2, family2));
-
     }
-
     static void tast3() {
         String[] strings = {"Johnss", "Ma", "Janes", "Daddy"};
         System.out.println(Arrays.toString(cornerValuesArray(strings)));
