@@ -6,7 +6,9 @@ public class Main {
         Author Dostoevsky = new Author();
         Book hamlet = new Book();
         Book crimesAndPunishments = new Book();
-        Dostoevsky.setNameSurnameAuthor("Фёдор", "Достоевский");
+        Dostoevsky.setName("Фёдор");
+        Dostoevsky.setSurname("Достоевский");
+        crimesAndPunishments.setAuthor(String.valueOf(Dostoevsky));
         crimesAndPunishments.setPages(1866);
         crimesAndPunishments.setTitle("Преступление и наказание ");
 
@@ -14,7 +16,9 @@ public class Main {
         System.out.println("Автор- " + crimesAndPunishments.getAuthor());
         System.out.println("год издания- " + crimesAndPunishments.getPages());
 
-        Shakespeare.setNameSurnameAuthor("William", "Shakespeare");
+        Shakespeare.setName("William");
+        Shakespeare.setSurname("Shakespeare");
+        hamlet.setAuthor(String.valueOf(Shakespeare));
         hamlet.setPages(1603);
         hamlet.setTitle("Траги́ческая исто́рия о Га́млете, при́нце да́тском");
 

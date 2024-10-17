@@ -1,20 +1,25 @@
 package OOP;
 
 public class Author {
-    private static String author;
+    public static String surname;
+    public static String name;
 
-
-    public static String getAuthorBook() {
-        return author();
+    public void setName(String name) {
+        Author.name = name;
     }
 
-    private static String author() {
-        return author;
+    public void setSurname(String surname) {
+        Author.surname = surname;
     }
 
-    public void setNameSurnameAuthor(String name, String SurnameAuthor) {
-        author = name + " " + SurnameAuthor;
+    public String getName() {
+        return name;
     }
+
+    public String getSurname() {
+        return surname;
+    }
+
 }
 
 
