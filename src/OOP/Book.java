@@ -3,9 +3,11 @@ package OOP;
 import java.time.LocalDate;
 
 public class Book {
+
     private String author;
     private String title;
     private Integer pages;
+
     public String getAuthor() {
         return author;
     }
@@ -35,7 +37,6 @@ public class Book {
         }
 
     }
-
     public void setTitle(String title) {
         this.title = title;
     }

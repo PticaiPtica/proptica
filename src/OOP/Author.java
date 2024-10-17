@@ -1,6 +1,7 @@
 package OOP;
 
 public class Author {
+
     public static String surname;
     public static String name;
 

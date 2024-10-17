@@ -6,8 +6,10 @@ public class Main {
         Author Dostoevsky = new Author();
         Book hamlet = new Book();
         Book crimesAndPunishments = new Book();
+
         Dostoevsky.setName("Фёдор");
         Dostoevsky.setSurname("Достоевский");
+
         crimesAndPunishments.setAuthor(String.valueOf(Dostoevsky));
         crimesAndPunishments.setPages(1866);
         crimesAndPunishments.setTitle("Преступление и наказание ");
