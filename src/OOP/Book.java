@@ -3,42 +3,55 @@ package OOP;
 import java.time.LocalDate;
 
 public class Book {
+    private Author author; //Автор
+    private String title; //название
+    private Integer pages; // дата публикации
 
-    private String author;
-    private String title;
-    private Integer pages;
+    public void setAuthor(Author author) {
+        this.author = author;
+    }
 
-    public String getAuthor() {
+    public Author getAuthor() {
         return author;
     }
 
-    public void setAuthor(String author) {
-        this.author = Author.name +" "+Author.surname;
+    public Book() {
     }
 
-    public void setPages(Integer pages) {
+    public Book(Author author, Integer pages, String title) {
+        this.author = author;
+        this.title = title;
         this.pages = pages;
     }
 
-    public int getPages() {
-        return pages;
-    }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setPages(int pages) {
+    public void setPages(Integer pages) {
         if (pages <= LocalDate.now().getYear()) {
             this.pages = pages;
         } else {
             this.pages = -1;
             System.out.println("Year out of range");
         }
-
     }
+
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public int getPages() {
+        return pages;
+    }
+
+
+    public String getTitle() {
+        return title;
+    }
+
+    @Override
+    public String toString() {
+        return "Название книги - " + title + "\n" +
+                "Год публикации: " + pages + "\n" +
+                "Автор " + author.toString();
     }
 
 }

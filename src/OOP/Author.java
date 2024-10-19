@@ -2,25 +2,37 @@ package OOP;
 
 public class Author {
 
-    public static String surname;
-    public static String name;
+    private String surname;
+    private String name;
 
-    public void setName(String name) {
-        Author.name = name;
-    }
-
-    public void setSurname(String surname) {
-        Author.surname = surname;
+    public String getSurname() {
+        return surname;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getSurname() {
-        return surname;
+
+    public Author(String surname, String name) {
+        this.name = name;
+        this.surname = surname;
+
+
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    @Override
+    public String toString() {
+        return name + " " + surname;
+    }
 }
 
 

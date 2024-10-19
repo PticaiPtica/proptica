@@ -2,30 +2,26 @@ package OOP;
 
 public class Main {
     public static void main(String[] args) {
-        Author Shakespeare = new Author();
-        Author Dostoevsky = new Author();
-        Book hamlet = new Book();
-        Book crimesAndPunishments = new Book();
+        Author Shakespeare = new Author("William", "Shakespeare");
+        Author Dostoevsky = new Author("Фёдор", "Достоевский");
 
-        Dostoevsky.setName("Фёдор");
-        Dostoevsky.setSurname("Достоевский");
+        Book crimesAndPunishments = new Book(Dostoevsky, 1866, "Преступление и наказание ");
+        Book hamlet = new Book(Shakespeare, 1603, "Траги́ческая исто́рия о Га́млете, при́нце да́тском");
 
-        crimesAndPunishments.setAuthor(String.valueOf(Dostoevsky));
-        crimesAndPunishments.setPages(1866);
-        crimesAndPunishments.setTitle("Преступление и наказание ");
+        System.out.println(crimesAndPunishments);
+        System.out.println(hamlet);
 
-        System.out.println("Название книги- " + crimesAndPunishments.getTitle());
-        System.out.println("Автор- " + crimesAndPunishments.getAuthor());
-        System.out.println("год издания- " + crimesAndPunishments.getPages());
+        Author William = new Author("William","William");
 
-        Shakespeare.setName("William");
-        Shakespeare.setSurname("Shakespeare");
-        hamlet.setAuthor(String.valueOf(Shakespeare));
-        hamlet.setPages(1603);
-        hamlet.setTitle("Траги́ческая исто́рия о Га́млете, при́нце да́тском");
+        crimesAndPunishments.setTitle("Преступление");
+        crimesAndPunishments.setPages(1234);
 
-        System.out.println("Название книги- " + hamlet.getTitle());
-        System.out.println("Автор- " + hamlet.getAuthor());
-        System.out.println("год издания- " + hamlet.getPages());
+        hamlet.setAuthor(William);
+
+        System.out.println("Новое название " + crimesAndPunishments.getTitle());
+        System.out.println("Новое год издания " + crimesAndPunishments.getPages());
+        System.out.println("Новый автор " + hamlet.getAuthor());
+
+
     }
 }
