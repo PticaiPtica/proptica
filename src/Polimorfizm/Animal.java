@@ -1,6 +1,6 @@
 package Polimorfizm;
 
-public class Animal {
+public abstract class Animal {
     private String name;
     private String eat;
 
@@ -17,9 +17,16 @@ public class Animal {
         this.eat = eat;
     }
 
-    public void makeSound() {
-        System.out.println("Животное издает звук");
-    }
+
+    /**
+     * Метод выдает звук животного
+     */
+    public abstract void makeSound();
+    /**
+     * Метод выдает как животное передвигается
+     */
+
+    public abstract void move();
 
     public String getName() {
         return name;
@@ -29,7 +36,8 @@ public class Animal {
         this.name = name;
     }
 
-    public void eat() {
-        System.out.println("Кушает");
-    }
+    /**
+     * Метод выдает что кушает животное
+     */
+    public abstract void eat();
 }
