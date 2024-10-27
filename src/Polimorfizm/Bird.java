@@ -2,11 +2,27 @@ package Polimorfizm;
 
 public class Bird extends Animal {
     static String sound = "Чирик-чирик";
-    private boolean canFly;
+    private final boolean canFly;
 
+    /**
+     * Конструкт принимающий имя животного(птицы) String
+     * +то чем животное питается String
+     * + умеет ли летать boolean
+     */
     public Bird(String name, String eat, boolean canFly) {
         super(name, eat);
         this.canFly = canFly;
+    }
+
+    @Override
+    public void move() {
+        if (canFly) {
+            System.out.println(getName() + " Летает");
+        } else {
+            System.out.println(getName() + " не летает");
+
+
+        }
     }
 
     @Override
