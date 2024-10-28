@@ -1,6 +1,6 @@
 package Polimorfizm;
 
-public class Dog extends Animal implements Pet {
+public final class Dog extends Animal implements Pet {
     static String sound = "Гав-гав";
 
     /**

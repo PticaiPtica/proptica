@@ -1,6 +1,6 @@
 package Polimorfizm;
 
-public class Bird extends Animal {
+public final class Bird extends Animal {
     static String sound = "Чирик-чирик";
     private final boolean canFly;
 
