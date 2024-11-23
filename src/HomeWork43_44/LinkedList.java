@@ -14,8 +14,41 @@ public class LinkedList {
     public static void main(String[] args) {
         List<Integer> linkedList = new java.util.LinkedList<>();
         List<Integer> arrayList = new java.util.ArrayList<>();
+        addInStart(linkedList);
+        addInStart(arrayList);
+
+
         System.out.println(randomResult(linkedList, arrayList));
     }
+
+    public static long addInStart(List<Integer> list) {
+        LocalTime startTime = LocalTime.now();
+
+        for (int i = 0; i < countE; i++) {
+            list.addFirst(i);
+        }
+
+        LocalTime endTime = LocalTime.now();
+
+        Duration time = Duration.between(startTime, endTime);
+        return time.toMillis();
+    }
+
+    public static long addInEnd(List<Integer> list) {
+        LocalTime startTime = LocalTime.now();
+
+        for (int i = 0; i < countE; i++) {
+            list.add(i);
+        }
+
+        LocalTime endTime = LocalTime.now();
+
+        Duration time = Duration.between(startTime, endTime);
+
+        return time.toMillis();
+
+    }
+
     public static String randomResult(List<Integer> list1, List<Integer> list2) {
         Random rand = new Random();
         LocalTime startTime1 = LocalTime.now();

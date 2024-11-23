@@ -1,5 +1,7 @@
 package Polimorfizm;
 
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -9,7 +11,6 @@ public class Main {
         Animal cat2 = new Cat("Персик", "Корм");
         Animal bird1 = new Bird("Кеша", "Семечки", true);
         Animal bird2 = new Bird("Петух", "Зерна", false);
-
         Animal[] animals = {dog1, dog2, cat1, cat2, bird1, bird2};
         for (Animal animal : animals) {
             if (animal instanceof Pet) {
@@ -20,7 +21,7 @@ public class Main {
             animal.eat();
             animal.move();
             System.out.println();
-
+            Random rand = new Random();
         }
     }
 

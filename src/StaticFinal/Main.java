@@ -31,6 +31,7 @@ public class Main {
         game.playerRun("Jane");
 
         game.deletePlayer("Mary");
+        game.deletePlayer("Sergey");
         game.playerStamina("Bob");
 
         for (int i = game.playerStamina("Jane"); i >= Player.MIN_STAMINA;i-- ) {

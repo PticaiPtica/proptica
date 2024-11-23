@@ -1,3 +1,5 @@
+package HomeWork;
+
 import java.util.Arrays;
 
 import static HomeWork.Methods.*;
@@ -10,6 +12,7 @@ public class Main {
         task4();
         task5();
         task6();
+
     }
 
     static void task1() {
@@ -82,6 +85,4 @@ public class Main {
         System.out.println("task6");
         System.out.println("факториал - " + facktorial(6));
     }
-
 }
-
