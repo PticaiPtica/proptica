@@ -1,7 +1,7 @@
 package GC;
 
 public class GarbageDemo {
-    private int id;
+    private int id ;
 
     public GarbageDemo(int id) {
         this.id = id;

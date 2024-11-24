@@ -17,5 +17,6 @@ public class GCexample {
         Thread.sleep(1000);
         System.out.println("Завершение");
         System.out.println(garbageDemos);
+        System.out.println(garbageDemos);
     }
 }
